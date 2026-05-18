@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 90" role="img" aria-label="Tech stack animation">
+  <rect width="700" height="90" rx="10" fill="#1a1f16"/>
+  <text x="350" y="28" text-anchor="middle" fill="#95d5b2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">ZERO BACKEND · PURE STATIC</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">
+    <g transform="translate(40 42)">
+      <rect width="88" height="36" rx="8" fill="#e34c26"/>
+      <text x="44" y="23" text-anchor="middle" fill="#fff">HTML5</text>
+      <animateTransform attributeName="transform" type="translate" values="40 42;40 38;40 42" dur="2.2s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(150 42)">
+      <rect width="88" height="36" rx="8" fill="#264de4"/>
+      <text x="44" y="23" text-anchor="middle" fill="#fff">CSS3</text>
+      <animateTransform attributeName="transform" type="translate" values="150 42;150 38;150 42" dur="2.2s" begin="0.2s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(260 42)">
+      <rect width="100" height="36" rx="8" fill="#f7df1e"/>
+      <text x="50" y="23" text-anchor="middle" fill="#1a1f16">JavaScript</text>
+      <animateTransform attributeName="transform" type="translate" values="260 42;260 38;260 42" dur="2.2s" begin="0.4s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(390 42)">
+      <rect width="110" height="36" rx="8" fill="#fff"/>
+      <text x="55" y="23" text-anchor="middle" fill="#1a1f16">localStorage</text>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(530 42)">
+      <rect width="88" height="36" rx="8" fill="#000"/>
+      <text x="44" y="23" text-anchor="middle" fill="#fff">Vercel</text>
+      <animateTransform attributeName="transform" type="translate" values="530 42;530 38;530 42" dur="2.2s" begin="0.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <circle cx="350" cy="78" r="3" fill="#74c69d">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="362" cy="78" r="3" fill="#74c69d">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="374" cy="78" r="3" fill="#74c69d">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

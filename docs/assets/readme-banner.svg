@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-label="Simple Cart animated banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332">
+        <animate attributeName="stop-color" values="#1b4332;#2d6a4f;#40916c;#1b4332" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#40916c">
+        <animate attributeName="stop-color" values="#40916c;#74c69d;#2d6a4f;#40916c" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="900" height="220" rx="18" fill="url(#bg)"/>
+  <rect width="900" height="220" rx="18" fill="url(#shine)">
+    <animate attributeName="x" from="-900" to="900" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="40" y="78" fill="#d8f3dc" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">
+    Simple Cart
+    <animate attributeName="opacity" values="1;0.85;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+  <text x="40" y="118" fill="#b7e4c7" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+    Static · No Database · Vercel Ready
+  </text>
+  <text x="40" y="158" fill="#95d5b2" font-family="Segoe UI, Arial, sans-serif" font-size="14">
+    Vegetables · Fruits · Cakes · Biscuits
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Cart body -->
+  <g transform="translate(620 95)" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="620 95;625 92;620 95" dur="2.5s" repeatCount="indefinite"/>
+    <path d="M0 30 L12 30 L18 8 L58 8 L64 30 L110 30 L98 78 L20 78 Z" fill="#f6f4ef"/>
+    <circle cx="32" cy="88" r="10" fill="#1a1f16"/>
+    <circle cx="86" cy="88" r="10" fill="#1a1f16"/>
+    <circle cx="32" cy="88" r="4" fill="#95d5b2">
+      <animateTransform attributeName="transform" type="rotate" from="0 32 88" to="360 32 88" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="86" cy="88" r="4" fill="#95d5b2">
+      <animateTransform attributeName="transform" type="rotate" from="0 86 88" to="360 86 88" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floating items -->
+  <circle cx="720" cy="55" r="14" fill="#ff6b6b">
+    <animate attributeName="cy" values="55;45;55" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="760" cy="48" r="12" fill="#ffd93d">
+    <animate attributeName="cy" values="48;38;48" dur="2.3s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="52" r="13" fill="#6bcb77">
+    <animate attributeName="cy" values="52;42;52" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="680" y="30" width="22" height="14" rx="4" fill="#c77dff" opacity="0.9">
+    <animate attributeName="y" values="30;22;30" dur="2.1s" begin="0.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Pulse ring -->
+  <circle cx="680" cy="110" r="8" fill="none" stroke="#d8f3dc" stroke-width="2" opacity="0.8">
+    <animate attributeName="r" values="8;28;8" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
